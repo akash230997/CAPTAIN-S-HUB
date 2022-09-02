@@ -1,0 +1,176 @@
+/* ======================Achievement======================= */
+
+.about-achievement{
+    margin-top: 3rem;
+}
+.about-achievement-container{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap: 5rem;
+}
+.about-achievement-left img{
+    border-radius: 10px;
+}
+
+.about-achievement-right p{
+    margin: 1.6rem 0 2.5rem;
+}
+
+.achievement-cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    
+}
+
+.achievement-card{
+    background: #2e3267;
+    padding: 1rem;
+    border-radius: 1rem;
+    text-align: center;
+    height: 220px;
+    transition: all 400ms ease;
+}
+
+.achievement-card:hover{
+    background: #424890;
+    box-shadow: 0 3rem 3rem rgba(0,0,0,0.3);
+}
+
+
+.achievement-icon{
+    background: #f75842;
+    padding: 0.2rem;
+    border-radius: 1rem;
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 2rem;
+}
+
+.achievement-card p {
+    /* margin-top: 3rem; */
+}
+
+
+/* ====================== TEAM ======================= */
+
+
+.team{
+    background: #2e3267;
+    box-shadow: inset 0 0 3rem rgba(0,0,0,0.5);
+}
+
+.team-container{
+    display: grid;
+    grid-template-columns: repeat(4 , 1fr);
+    gap: 2rem;
+}
+.team-member{
+    background: #424890;
+    padding: 2rem;
+    border: 1px solid transparent;
+    position: relative;
+    overflow: hidden;
+}
+.team-member:hover{
+    background: transparent;
+    border-color: #6c63ff;
+}
+
+.team-member-img img{
+     filter: saturate(0);
+}
+.team-member:hover img{
+    filter: saturate(1);
+}
+
+.team-member-info{
+    text-align: center;
+    margin-top: 1.4rem;
+}
+
+.team-member-info p{
+    margin-top: 2rem;
+    color: rgb(136, 133, 133);
+}
+
+.team-socials{
+    position: absolute;
+    top: 50%;
+    right: -100%;
+    display: flex;
+    flex-direction: column;
+    background: #6c63ff;
+    border-radius: 1rem 0 0 1rem;
+    transform: translateY(-50%);
+    box-shadow: -2rem 0 2rem rgba(0,0,0,0.3);
+    transition: all 400ms ease;
+}
+
+.team-member:hover .team-socials{
+    right: 0;
+}
+
+.team-socials a{
+    padding: 1rem;
+}
+
+/* ====================== Media Queries(Tablet) ======================= */
+
+
+@media screen and (max-width:1024px){
+    .about-achievements{
+        margin-top: 2rem;
+    }
+    .about-achievement-container{
+        grid-template-columns: 1fr;
+        gap: 4rem;
+    }
+    .team-container{
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+    .team-member{
+        padding: 1rem;
+    }
+
+}
+
+
+@media screen and (max-width:600px) {
+
+   .achievement-cards{
+    grid-template-columns: repeat(2,1fr);
+    gap: 0.7rem;
+   }
+
+   .team-container {
+       grid-template-columns: repeat(2, 1fr);
+       gap: 0.6rem;
+   }
+
+   .team-member{
+    padding: 1rem;
+   }
+
+   .team-member p {
+        margin-bottom: 1.5rem;
+   }
+
+}
+
+@media screen and (max-width:400px) {
+
+    .achievement-cards {
+        grid-template-columns: 1fr
+    }
+
+    .team-container {
+        grid-template-columns:1fr;
+    }
+
+    .footer-container{
+        grid-template-columns: 1fr;
+    }
+
+}
