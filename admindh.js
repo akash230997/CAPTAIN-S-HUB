@@ -117,14 +117,6 @@ var areaChartOptions = {
     tooltip: {
         shared: true,
         intersect: false,
-        // y: {
-        //     formatter: function (y) {
-        //         if (typeof y !== "undefined") {
-        //             return y.toFixed(0) + " points";
-        //         }
-        //         return y;
-        //     }
-        // }
     }
 };
 
