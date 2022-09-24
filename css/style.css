@@ -31,6 +31,7 @@ body{
     color: #fff;
     background: #1f2641;
     line-height: 1.7;
+    box-sizing: border-box;
 }
 
 
@@ -601,7 +602,7 @@ header{
 
 .categories{
     background: #2e3267;
-    height: 600px;
+    height: 700px;
 
 }
 
@@ -626,7 +627,7 @@ header{
 }
 .categories-right{
     display: grid;
-    grid-template-columns: repeat(3 , 1fr);
+    grid-template-columns: repeat(3 , 270px);
     gap: 1.2rem;
 }
 
@@ -658,7 +659,7 @@ header{
 /* =============== POPULAR COURSES ============ */
 
 .courses{
-    margin-top: 300px;
+    margin-top: 100px;
 }
 .courses-container{
     display: grid;
